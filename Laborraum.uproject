@@ -1,9 +1,15 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "4.25",
+	"EngineAssociation": "{00048052-08DA-D2C4-D59F-54487BCD3710}",
 	"Category": "",
 	"Description": "",
-	"Enterprise": true,
+	"Modules": [
+		{
+			"Name": "Laborraum",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
 	"Plugins": [
 		{
 			"Name": "SunPosition",
@@ -64,7 +70,10 @@
 		},
 		{
 			"Name": "ModelingToolsEditorMode",
-			"Enabled": true
+			"Enabled": true,
+			"TargetAllowList": [
+				"Editor"
+			]
 		},
 		{
 			"Name": "DatasmithC4DImporter",
